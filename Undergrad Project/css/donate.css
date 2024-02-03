@@ -1,0 +1,133 @@
+
+
+
+.donation-form .input-field .input-group{
+    width: 100%;
+    border:1px solid DARKVIOLET;
+    border-radius: 7px;
+    padding: 5px 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+.donation-form .input-field .input-group .input-group-text{
+    font-size: 16px;
+    background: transparent;
+    border:0;
+    font-weight: bold;
+}
+.donation-form .input-field .input-group .form-control{
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-bottom: 0;
+    border-top:0;
+    border-radius: 0;
+    border-right: 0;
+    padding: 0 0 0 25px;
+    height: 50px;
+    font-size: 16px;
+    color:#000;
+}
+.donation-form .input-field .input-group .form-control:placeholder{
+    font-size: 16px;
+    color: #7a7b7c;
+    font-weight: 400;
+}
+.donation-form .input-field .input-group .form-control:focus{
+    outline: none;
+    box-shadow:none;
+}
+.donation-form .amount .need{
+    box-shadow: 0  3px 6px rgba(0,0,0,0.16);
+    padding: 18px 27px;
+    border-radius: 7px;
+    border: 1px solid DARKVIOLET;
+    display: block;
+    overflow: hidden;
+}
+@media (max-width: 767px){
+    .donation-form .amount .need{
+        display: block !important;
+        margin-top: 15px;
+    }
+}
+.donation-form .amount .need .select h5{
+    font-size: 16px;
+    color: #7a7b7c;
+    margin-bottom: 0;
+}
+.donation-form .amount .need .fund label{
+    font-size: 16px;
+    font-weight: 400;
+    color:DARKVIOLET;
+    margin-bottom: 0;
+}
+
+@media(max-width: 767px){
+    .donation-form .amount .need .fund{
+        width: 33.33%;
+        float:left;
+        margin-top: 15px;
+    }
+}
+.donation-btn{
+    margin-top: 50px;
+}
+.btn-don{
+    background: DARKVIOLET;
+    color: #fff;
+    border-radius: 50px;
+}
+.btn-don:hover{
+    color: #9ef596;
+}
+
+.footer{
+  background-color: #9400D3;S
+}
+
+
+nav  ul {
+  float: right;
+  margin:0;
+  margin-right: 1.9rem;
+}
+
+nav ul li{
+   list-style: none;
+  display : inline-block;
+
+}
+nav ul li a{
+  letter-spacing: 1px;
+  padding : 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  position: relative;
+}
+nav ul ul{
+  display: none;
+}
+.submenu {
+  width: 20rem;
+  display:block;
+  position:absolute;
+  z-index:100;
+  border-top: 3px solid black;
+  opacity: 0;
+  visibility: hidden;
+  border-top: 3px solid BLACK;
+  background-color: black;
+  Color: BLACK
+
+
+}
+
+nav li a:hover {
+  background-color: white;
+  color: black;
+}
+nav li:hover >.submenu{
+  opacity:1;
+  visibility: visible;
+border-top: 3px solid black;
+
+}

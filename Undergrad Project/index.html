@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAKEWOOD CHURCH</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">LAKEWOOD CHURCH</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Home</a>
+          <a href="about.html">About Lakewood</a>
+          <a href="stimes.html">Service Times</a>
+          <a href="file:///C:/Users/HP/Documents/lakewood/adm.html">Visit</a>
+          <a href="service.html">Recorded Service</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="video1.mov" autoplay muted loop></video>
+      <video class="video-slide" src="video2.mov" autoplay muted loop></video>
+      <video class="video-slide" src="video4.mov" autoplay muted loop></video>
+      <video class="video-slide" src="video3.mov" autoplay muted loop></video>
+      <video class="video-slide" src="video.mov" autoplay muted loop></video>
+      <div class="content active">
+        <h1>GOD IS GREAT <br><span>ISN'T IT THAT SIMPLE?</span></h1>
+        <p>At Lakewood, we believe your best days are still out in front of you. <br>
+           Whether you are joining us in person or online, we invite you to  <br>
+           experience our services and be a part of the Lakewood family. <br>
+            The Bible says when you are planted in the house of the Lord, you will flourish. <br>
+             Get ready to step into a new level of your destiny!  <br>
+           </p>
+        <a href="donate.html">DONATION</a>
+      </div>
+      <div class="content">
+        <h1>Wonderful.<br><span> GOD</span></h1>
+        <p>Time to time the enemy will attack us, but instead of letting ourselves <br>
+          down we have to remind him that Jesus has already conquered the grave,<br>
+           He is risen! It’s time to rise up and walk in victory, towards our God given destiny <br>
+           </p>
+        <a href="donate.html">DONATION</a>
+      </div>
+      <div class="content">
+        <h1>He works.<br><span>Wonders</span></h1>
+        <p> When things in the natural look impossible and our logic tells us there's <br>
+           no solution, then it's the right time to believe for God to work the supernatural. <br>
+            He's not limited by our circumstances, He can make a way where there is no way. <br>
+             Supernatural healing and provision is on the way. <br>
+           </p>
+        <a href="donate.html">DONATION</a>
+      </div>
+      <div class="content">
+        <h1>Seeing .<br><span>Beyond the Logical</span></h1>
+        <p>
+          Jesus came to earth to bring us a glimpse of eternal life. <br>
+           When you need something made right, declare His name over your life! <br>
+        </p>
+        <a href="donate.html">DONATION</a>
+      </div>
+      <div class="content">
+        <h1>Lets Walk.<br><span>In The Light</span></h1>
+        <p>
+          Our faith in Jesus is marked by repentance and forgiveness. <br>
+           When our hearts do not condemn us because we’ve repented <br>
+            we have confidence to go before God when we pray.
+        </p>
+        <a href="donate.html">DONATION</a>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/lakewoodchurch"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/lakewoodchurch"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/LakewoodChurch"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/lakewoodchurch"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+    <audio  control src=" music.mp3">
+
+    </audio>
+
+  </body>
+</html>
